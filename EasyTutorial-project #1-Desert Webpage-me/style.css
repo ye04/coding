@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(background.png);
+    height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+li {
+    display: inline-block;
+    margin: auto 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+li a {
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.hamburger img {  
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.text {
+    margin-left: 5%;
+}
+
+.text h1 {
+    font-size: 80px;
+    color: white;
+    line-height: 1.5;
+}
+
+.text p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.text a {
+    background-color: white;
+    display: inline-block;
+    width: 180px;
+    padding: 8px;
+    text-align: center;
+    color: black;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background-color 0.3s linear;
+}
+
+.images img {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.images {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    grid-template-columns: 200px 200px;
+    grid-gap: 30px;
+    position: relative;
+    top: 50px;
+    right: -5%;
+}
+
+.caption {
+    z-index: 5;
+    color: white;
+}
+
+
+
+.wd {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: top 1s ease;
+
+}
+.ab {
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    transition: top 1s ease;
+}
+
+.pog {
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    transition: top 1s ease;
+}
+.kd {
+    position: absolute;
+    top: 270px;
+    left: 240px;
+    transition: top 1s ease;
+}
+
+.smallcap {
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.bigcap {
+    font-weight: bold;
+    
+}
+
+.pic1 {
+    position: relative;
+    top: 0;
+    transition: top 1s ease;
+}
+
+.pic1:hover{
+    top: -20px;
+}
+.pic1:hover + .wd {
+    top: -10px;
+}
+
+.pic2 {
+    position: relative;
+    top: 0;
+    transition: top 1s ease;
+}
+.pic2:hover {
+    position: relative;
+    top: -20px;
+}
+.pic2:hover + .ab {
+    top: -10px;
+}
+.pic3 {
+    position: relative;
+    top: 0;
+    transition: top 1s ease;
+}
+
+.pic3:hover {
+    position: relative;
+    top: -20px;
+}
+.pic3:hover + .pog {
+    top: 250px;
+}
+.pic4 {
+    position: relative;
+    top: 0;
+    transition: top 1s ease;
+}
+
+.pic4:hover {
+    position: relative;
+    top: -20px;
+}
+.pic4:hover + .kd {
+    top: 250px;
+}
+
+.text a:hover {
+    background-color: grey;
+}
+

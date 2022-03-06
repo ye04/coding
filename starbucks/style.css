@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+li {
+    display: inline-block;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+    box-shadow: 2px 0 3px grey;
+    z-index: 10;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-family: "SoDo Sans Semi Bold";
+}
+.left li a {
+    letter-spacing: 2px;
+    transition: 0.1s linear;
+}
+.find {
+    margin-right: 30px;
+}
+.find a {
+    transition: 0.1s linear;
+}
+.left li a:hover {
+    color: #008248;
+}
+.left li {
+    margin-left: 20px;
+}
+.menu {
+    margin-left: 35px;
+}
+.find a:hover {
+    color: #008248;
+}
+.sign-in {
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s linear;
+    
+}
+
+.sign-in:hover {
+    background-color: #F0F0F0;
+}
+.join-now {
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: black;
+    transition: 0.3s linear;
+}
+.join-now:hover {
+    background-color: #4C4C4C;
+}
+.join-now a {
+    color: white;
+}
+.right {
+    position: relative;
+}
+.find {
+    position: relative;
+    left: -25px;
+}
+.sign-in {
+    position: relative;
+    left: -20px;
+}
+.covid a:hover {
+    text-decoration: none;
+}
+.covid {
+    background-color: #D4E9E2;
+    margin-left: 40px;
+    margin-right: 40px;
+    z-index: 1;
+
+}
+p {
+    font-family: Helvetica, sans-serif;
+
+}
+.covid a, .covid p {
+    font-family: Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+}
+.covid a {
+    text-decoration: underline;
+}
+.earth img, .drinks img, .breakfast img, .spring img {
+    width: 720px;
+    height: 625px;
+}
+
+.coffee img {
+    width: 720px;
+    height: 400px;
+}
+.celebrate {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #006246;
+    line-height: 1.5;
+    font-weight: 400px;
+}
+.enjoy {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #1E3932;
+    line-height: 1.5;
+    font-weight: 400px;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.uber {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #1E3932;
+    line-height: 1.5;
+    font-weight: 400px;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.grab {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #1E3932;
+    line-height: 1.5;
+    font-weight: 400px;
+    margin: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.play {
+    padding: 6px;
+    border-radius: 20px;
+    width: 100px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #1C905D;
+    position: relative;
+    left: 35%;
+    transition: 0.3s linear;
+
+}
+.order {
+    padding: 6px;
+    border-radius: 20px;
+    width: 150px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #1E3932;
+    position: relative;
+    left: 35%;
+    transition: 0.3s linear;
+
+}
+.order-now {
+    padding: 6px;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #1E3932;
+    position: relative;
+    left: 35%;
+    transition: 0.3s linear;
+
+}
+.play:hover {
+    background-color:#C3E1D6 ;
+}
+.order:hover {
+    background-color: #DCDED8;
+}
+.order2:hover {
+    background-color: #DCDED8;
+}
+
+.order2 {
+    padding: 6px;
+    border-radius: 20px;
+    width: 160px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #1E3932;
+    position: relative;
+    left: 35%;
+    transition: 0.3s linear;
+}
+.explore {
+    padding: 6px;
+    border-radius: 20px;
+    width: 160px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #1E3932;
+    position: relative;
+    left: 35%;
+    transition: 0.3s linear;
+}
+
+.play a {
+    font-weight: lighter;
+    color: #1C905D;
+}
+.earth-text {
+    margin-right: 125px;
+    position: relative;
+}
+.drinks-text {
+    margin-right: 125px;
+    position: relative;
+}
+.spring-text {
+    margin-right: 125px;
+    position: relative;
+}
+.breakfast-text {
+    margin-left: 80px;
+    position: relative;
+}
+.coffee-text {
+    margin-left: 130px;
+    position: relative;
+}
+
+.earth {
+    display: flex;
+    background-color: #D4E9E2;
+    margin: 35px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drinks {
+    display: flex;
+    background-color: #F2F0EB;
+    margin: 35px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.spring {
+    display: flex;
+    background-color: #F2F0EB;
+    margin: 35px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.breakfast {
+    display: flex;
+    background-color: #F2F0EB;
+    margin: 35px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.coffee {
+    background-color: #D4E9E2;
+    display: flex;
+    margin: 35px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drinks h1, .breakfast h1, .spring h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.discover h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700px;
+    text-align: center;
+    color: #1E3932;
+    font-size: 50px;
+    margin: 70px auto;
+    text-transform: uppercase;
+}
+
+.discover {
+    margin-bottom: 30px;
+}
+.discover img {
+    width: 704px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+.discover-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+.easy, .paypal {
+    background-color: #D4E9E2;
+}
+.card-title {
+    font-size: 24px;
+}
+.know{
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400px;
+}
+.card-text {
+    text-align: center;
+}
+
+.card-addition {
+    font-size: 19px;
+}
+.easy-title {
+    margin: 40px 0;
+}
+.paypal-title {
+    margin-bottom: 40px;
+}
+.card-addition {
+    line-height: 2;
+}
+.help {
+    line-height: 2;
+    text-align: center;
+    font-weight: 400px;
+    margin: 45px 0;
+    letter-spacing: 1px;
+}
+.ends {
+    margin-top: 30px;
+}
+.card-button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #1E3932;
+    font-size: 16px;
+}
+.easy-button {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.paypal-button {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.info {
+    width: 630px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle {
+    margin: 110px 0;
+}
+.info p {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    line-height: 22px;
+}
+hr {
+    text-shadow: 2px 2px grey;
+}

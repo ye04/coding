@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(login-bg.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+.banner {
+    
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin: 10px 10px;
+    padding: 20px;
+    color: white;
+    
+    
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    left: 55%;
+
+
+}
+
+nav li {
+    display: inline-block;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0 20px;
+    
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 6px 6px;
+    width: 80px;
+    transition: background-color 0.5s linear;
+}
+
+nav li a:hover {
+    background-color: #28df99;
+    padding: 6px 6px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+h1 :nth-child(4) {
+    color: green;
+}
+
+.login {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #2b99cc;
+    text-align: center;
+    background-color: #66FF99;
+    border-radius: 20px;
+}
+.username, .password {
+    margin: 10px auto;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #33CCFF;
+    border-radius: 40px;
+    text-align: center;
+    background: none;
+    transition: background-color 0.5s linear;
+    
+
+}
+
+.login h1 {
+    text-align: center;
+    color: white;
+}
+
+.submit-btn {
+    margin: 10px auto;
+    width: 100px;
+    padding: 15px 30px;
+    border: 5px solid yellow;
+    border-radius: 40px;
+    text-align: center;
+    background: none;
+    color: darkslategrey;
+    transition: background-color 0.5s linear;
+
+}
+
+.username:hover, .password:hover {
+    background-color: #33CCFF;
+    
+}
+.submit-btn:hover {
+    background-color:yellow;
+    
+}
+
+p {
+    color: white;
+}
+.login span {
+    text-decoration: underline;
+}

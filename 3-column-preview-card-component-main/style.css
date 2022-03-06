@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca';
+    text-decoration: none;
+    
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+}
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 50px;
+    width: 300px;
+    height: 500px;
+    margin: 100px 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: light;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 30px;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Big Shoulders Display';
+}
+a {
+    background-color: hsl(0, 0%, 95%);
+    display: inline-block;
+    margin-top: 80px;
+    padding: 13px 30px;
+    border-radius: 30px;
+}
+.sedan {
+    color:hsl(31, 77%, 52%);
+}
+.suv {
+    color:hsl(184, 100%, 22%);
+}
+.luxurya {
+    color:hsl(179, 100%, 13%);
+}

@@ -1,0 +1,240 @@
+<1 파이썬 자료형>
+
+1-1 자료형
+   1. 숫자 자료형
+	1) integer
+	ex) 5, -10, 1000
+	2) float
+	ex) 3.14, 1.0, -4.2
+   2. 문자열 자료형
+	ex) "풍선", '나비', print("ㅋ"*3) => "ㅋㅋㅋ"
+   3. Boolean (참/거짓)
+	ex) True, False, not True => False, (5 > 10) => False,
+
+1-2 변수
+   variable = initial value ==> assigning variable
+   variable = new value ==> reassigning variable
+   can have any data type as a value
+   *숫자나 boolean을 값으로 가지고 있다면 변수 자체가 그와 같은 자료형의 성질을 띄게 됨 (때때로 변수에도 casting이 필요)
+
+1-3 주석
+   #sigle line comment
+   주석처리 할 문장들의 범위를 선택한 후 ctrl + / 하면 한번에 주석 처리가 됨
+   '''multi
+   line comment '''
+
+
+<2 숫자 식>
+
+2-1 operater
+   1) addition (+)
+   2) subtraction (-)
+   3) multiplication (*)
+   4) division (/)
+	*single slash ==> return a unrounded float
+	*double slash ==> return a rounded-down float (integer)
+                        나머지를 제외한 몫의 값을 구함
+   5) modulo (%)
+        *나머지를 구해줌
+   6) exponent (**)
+
+
+2-2 conditional operator
+   1) and operator (&도 사용가능)
+        *both side of the operator must be true to be evaluated True
+	ex) print((3 > 0) and (3 < 5)) ==> True
+   2) or operator (|도 사용가능)
+	*at least one of the values should be true to be evaluated True
+        ex) print((3 < 0) or (3 < 5)) ==> True
+   3) 연속되는 식
+        ex) print(5 > 4 > 7) ==> False
+
+   ->comparing values
+   1) a == b
+   2) a != b
+   3) a > b
+   4) a < b
+   5) a >= b
+   6) a <= b
+
+2-3 숫자 처리 함수
+   1) abs(a) ==> a의 절댓값을 구함
+	ex) print(abs(-5)) ==> 5
+   2) pow(a, b) ==> a^b의 값을 구함
+	ex) print(pow(4, 2)) ==> 16
+   2) max(a, b) ==> a 와 b 중 더 큰 값을 구함
+	ex) print(max(4, 12) ==> 12
+   3) min(a, b) ==> a와 b 중 더 작은 값을 구함
+	ex) print(min(4, 12) ==> 4
+   4) round(float) ==> 소수를 반올림한 값을 구함
+        ex) print(round(3.14)) ==> 3
+
+   *math library 사용하기
+   from math import *
+   5) floor() ==> 내림
+	print(floor(4.99)) ==> 4
+   6) ceil() ==> 올림
+	print(ceil(3.14)) ==> 4
+   7) sqrt() ==> 제곱근
+	print(sqrt(16)) ==> 4
+
+2-4 랜덤 함수
+   *random library 사용하기
+   from random import *
+   1) random() ==> 0.0 이상 1.0 미만의 임의의 값 생성
+	*응용하기
+	random() * 10 ==> 0.0 이상 10.0 미만의 임의의 값 생성
+	-> random 함수는 긴 임의의 소수를 반환
+        int(random() * 10) ==> 0 이상 10 미만의 임의의 정수 값 생성
+        int(random() * 10) + 1 ==> 1 이상 10 이하의 임의의 정수 값 생성
+   2) randrange(a, b) ==> a 이상 b 미만의 임의의 정수 값 생성
+   3) randint(a, b) ==> a 이상 b "이하" 의 임의의 정수 값 생성
+
+<3 문자>
+
+3-1 문자열
+   ex) '작은 따옴표 가능'
+       "큰 따옴표 가능"
+       """
+       큰따옴표 세 개로 둘러싸서
+       여러 줄도
+       가능
+       """
+
+3-2 슬라이싱
+   *문자(단어)를 하나의 리스트(여러 아이템-글자-의 모임)로 간주할 수 있음
+   
+3-3 문자열 처리 함수
+   1) .lower() ==> 모든 글자를 소문자로 바꿈
+	ex) print("Python".lower()) ==> python
+   2) .upper() ==> 모든 글자를 대문자로 바꿈
+	ex) print("python".upper()) ==> PYTHON
+   3) .isupper() ==> 주어진 문자가 모두 대문자인 지를 확인 (True or False)
+	ex) print("Python".isupper()) ==> False
+   4) len(a) ==> a의 길이(글자 수)를 구함
+	ex) print(len("python") ==> 6
+   5) .replace(a, b) ==> 문자에서 a 를 찾아 그것을 b 로 바꿈
+	ex) print("Python".replace("P", "p")) ==> python
+   6) .index(a) ==> 문자에서 a가 몇 번째에 있는 지 구함
+	ex) print("Python".index(t)) ==> 2 
+	*첫번째 글자가 0부터 시작
+	* index = "banana".index("n", index + 1) 이라 하면 첫번째 n 이 있는 자리가 원래 index 값으로 지정되나 그에 + 1 된 자리, 즉 그 자리 다음 자리부터 또 n을 찾음
+          그래서 값은 첫번째 n 다음부터 또 n 을 찾았을 때 두번째 n 은 전체의 4번째에 있으므로 4.
+   7) .find(a) ==> 문자에서 a가 몇 번째에 있는 지 구함
+	ex) print("Python".find(t)) ==> 2
+	* a가 문자 안에 존재하지 않을 경우 -1 반환 (.index 는 오류)
+   8) .count(a) ==> 문자에서 a가 몇 번 들어가는 지 구함
+	ex) print("banana".count(n)) ==> 2
+
+3-4 문자열 포맷
+   *print("a" + "b") 나 print("a", "b") 로 두 문자를 한 번에 출력할 수 있음
+   *후자의 방법을 쓰면 자동으로 두 문자 사이에 공백이 한 칸 생기게 됨 (전자는 아님)
+
+   #방법 1
+      ex) print("나는 %d살입니다." % 20) ==> 나는 20살입니다.
+          print("나는 %s을 좋아해요." % "파이썬") ==> 나는 파이썬을 좋아해요.
+          print("Apple 은 %c로 시작해요." % "A") ==> Apple 은 A로 시작해요.
+	  print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨간")) ==> 나는 파란색과 빨간색을 좋아해요.
+   #방법 2
+      ex) print("나는 {}살입니다.".format(20)) ==> 나는 20살입니다.
+	  print("나는 {}색과 {}색을 좋아해요.".format("파란", "빨간")) ==> 나는 파란색과 빨간색을 좋아해요.
+          print("나는 {0}색과 {1}색을 좋아해요.".format("파란", "빨간")) ==> 나는 파란색과 빨간색을 좋아해요.
+          print("나는 {1}색과 {0}색을 좋아해요.".format("파란", "빨간")) ==> 나는 빨간색과 파란색을 좋아해요.
+   #방법 3
+      ex) print("나는 {age}살이며, {color}색을 좋아해요.".formoat(age = 20, color="빨간")) ==> 나는 20살이며 빨간색을 좋아해요.
+   #방법 4 (v3.6 이상~)
+      ex) age = 20
+          color = "빨간"
+          print(f"나는 {age}살이며, {color}색을 좋아해요.")
+
+3-5 탈출문자
+   1) \n ==> 줄바꿈
+	ex) print("안녕\하세요") ==> 안녕
+                                  하세요
+   2) \" \' ==> 문장 내에서 따옴표
+        ex) print("나는 '예원'이야.") ==> 나는 '예원'이야.
+	    print('나는 "예원"이야.') ==> 나는 "예원"이야.
+	    print("나는 \"예원\"이야.") ==> 나는 "예원"이야.
+	    print("나는 \'예원\'이야.") ==> 나는 "예원"이야.
+   
+   3) \\ ==> 문장 내에서 \
+        ex) print("C:\\Users\\Python\\Desktop\\PythonWorkspace>") ==> C:\Users\Python\Desktop\PythonWorkspace>
+	    
+   4) \r ==> 커서를 맨 앞으로 이동
+	ex) print("Red Apple\rPine") ==> PineApple
+        * Red Apple 까지 읽다가 \r가 뒤에 있는 것을 앞에 놓고 순서대로 Red와 공백 하나를 Pine이 잡아먹게 함. 
+   5) \b ==> 백스페이스 (앞의 한글자 삭제)
+        ex) print("Hellos\booo") ==> Helloooo
+   6) \t ==> 탭
+        ex) print("Red\tApple") ==> Red    Apple
+
+<4. 자료구조형>
+4-1 리스트
+   *순서를 가진 객체의 집합
+   *my_list = [0, 1, 2, 3]
+   *list는 zero-indexed (index는 0부터 시작)
+   *다양한 자료형 함께 사용 가능
+   *accessing to list element
+	-> my_list[index]
+	-> 리스트 안에 리스트를 넣었을 경우(2D list) ==> my_list[더 큰 element index][그 안의 작은 element index]
+   *list method
+	1) .index(a) ==> a의 위치(index)를 찾아줌
+	2) .append(a) ==> a 를 리스트 끝에 추가해줌
+	3) .insert(index, a) ==> a를 앞에서 정한 index 자리에 추가
+	4) .pop() ==> 맨 뒤의 아이템 하나 삭제
+	5) .count(a) ==> a 가 몇 개 있는지 확인해줌 
+	6) .sort() ==> 리스트를 숫자 순서 / 알파벳 순서대로 정렬
+	7) .reverse() ==> 리스트 아이템의 순서를 뒤에서부터로 바꿈 (숫자/알파벳 순서 반대로 정렬 x)
+	8) .clear()  ==> 리스트의 모든 아이템 삭제
+	9) .extend(other_list) ==> 리스트에 다른 리스트를 붙여서 확장
+
+4-2 사전
+   *순서가 없는 객체의 집합
+   *my_dict = {key:value, key:value}
+   *accessing to dictionary values
+	-> my_dict[key]
+   *여러가지 활용
+	1) .get(key) ==> key의 value를 가져옴
+	   * 값이 없을 경우 none 반환 (my_dict[key]와 같이 했을 때에는 없으면 에러)
+	   * get(key, a) ==> key가 없을 때는 a를 기본값으로 반환
+	2) key in my_dict ==> 사전 안에 key가 있는 지 확인 (boolean 값으로 확인)
+	3) my_dict[new_key] = "new value" ==> 사전에 새로운 키와 값을 지정해줌
+	   * 같은 키가 있었을 경우 값을 덮어씨움
+	4) del my_dict[key] ==> key와 그 값을 사전에서 지움
+	5) .keys() ==> key 들만 가져옴
+	6) .values() ==> value 들만 가져옴
+	7) .items() ==> 사전 안에 있는 모든 아이템을 가져옴
+	8) .clear() ==> 사전 안의 모든 값을 삭제
+
+4-3 튜플
+   *추가나 변경이 불가한 집합 (속도가 조금 더 빠름)
+   *my_tuple = (a, b)
+   *accessing to tuple item
+	-> my_tuple[index]
+
+4-4 세트
+   *중복이 안되고 순서가 없는 객체의 집합
+   *my_set = {1, 2, 3}
+   *여러 활용
+	1) my_set1 & my_set2 ==> 두 세트에서 중복되는 값 반환
+	2) my_set1.intersection(my_set2) ==> 위와 같음
+	3) my_set1 | my_set2 ==> 두 세트 중 하나에라도 포함되는 값 반환
+	4) my_set1.union(my_set2) ==> 위와 같음
+	5) my_set1 - my_set2 ==> my_set1에 포함되지만 my_set2에는 포함되지 않는 값 반환
+	6) my_set1.difference(my_set2) ==> 위와 같음
+	7) my_set.add(a) ==> 세트에 a를 추가
+	8) my_set.remove(a) ==> 세트에서 a를 삭제
+
+4-5 자료구조의 변경
+   1) type(a) ==> a 의 타입을 반환
+   2) list(a) ==> a 의 성질을 리스트로 변경
+   3) tuple(a) ==> a 의 성질을 튜플로 변경
+   4) set(a) ==> a 의 성질을 세트로 변경
+
+
+
+          
+          
+
+
+
