@@ -1,0 +1,35 @@
+<style>
+    img{
+        height: 200px;
+    }
+    @media(max-width:600px){
+        /* 화면 너비가 최대 600px까지는 (600px 이하는) 아래의 css 적용-->*/
+        /*글자 배경색이 분홍색, 윗 사진은 사라지고 아래 사진만 나타나기*/
+        p{
+            background-color: pink
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
+        }
+    }
+    @media(min-width:600px){
+        /* 화면 너비가 최소 600px까지는 (600px 이상은) 아래의 css 적용-->*/
+        /*글자 배경색이 파란색, 윗 사진만 나타나고 아래 사진은 사라지기*/
+        p{
+            background-color: skyblue;
+        }
+        .desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+</style>
+
+<img class="desktop" src="image/profile.jpg"/>
+<p>How does it appear?</p>
+<img class="mobile" src="image/profile.jpg"/>
