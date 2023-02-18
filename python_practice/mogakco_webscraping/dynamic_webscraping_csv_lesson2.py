@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import csv
 
-driver = webdriver.Chrome('chromedriver')
+driver = webdriver.Chrome('/chromedriver')
 papago_url = 'https://papago.naver.com/'
 driver.get(papago_url)
 time.sleep(3)
